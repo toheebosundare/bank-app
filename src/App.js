@@ -1,15 +1,16 @@
 import { BrowserRouter as Router} from 'react-router-dom';
 
 // components
-import Navbar from './components/Navbar'
+
 
 // styles
 import './App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
-        <Navbar />
+       <Home />
     </Router>
      
     

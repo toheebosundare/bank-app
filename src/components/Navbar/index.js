@@ -2,13 +2,13 @@ import React from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
 
-export default function Navbar() {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>dolla</NavLogo>
-          <MobileIcon>
+          <NavLogo to='/'>myMoney</NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -33,3 +33,5 @@ export default function Navbar() {
     </>
   )
 }
+
+export default Navbar;
