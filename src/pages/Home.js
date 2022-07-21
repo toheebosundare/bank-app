@@ -6,8 +6,8 @@ import Hero from '../components/hero'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/infosection'
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/infosection/Data';
-// import ServicesElements from '../components/Services'
+// import Services from '../components/Services'
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,12 +21,8 @@ const Home = () => {
       <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <Navbar toggle = {toggle} />
       <Hero />
-      <InfoSection { ...homeObjOne } />
-      <InfoSection { ...homeObjTwo } />
-      <InfoSection { ...homeObjThree } />
-      {/* <Services /> */}
-      {/* <InfoSection { ...homeObjFour } /> */}
-      
+      <InfoSection />
+      {/* <Services />  */}
     </>
   )
 }
