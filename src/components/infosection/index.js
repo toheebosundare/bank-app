@@ -9,10 +9,18 @@ import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesH
 
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SoicalLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements';
 
+import {animateScroll as scroll} from 'react-scroll'
+
 
 
 
 const InfoSection = (imgStart) => {
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
+
+
   return (
     <>
       <InfoContainer id='about' style={{color:'#fff', background: '#010606'}} >
@@ -203,7 +211,7 @@ const InfoSection = (imgStart) => {
           
           <SocialMedia>
             <SocialMediaWrap>
-              <SoicalLogo to='/'>
+              <SoicalLogo to='/' onClick={toggleHome}>
                   myMoney
               </SoicalLogo>
               <WebsiteRights>myMoney &copy; {new Date().getFullYear()} All rights reserved. </WebsiteRights>

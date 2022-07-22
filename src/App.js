@@ -8,8 +8,6 @@ import Home from './pages/Home';
 
 // styles
 import './App.css';
-import SigninPage from './pages/signinPage/SigninPage';
-import Navbar from './components/Navbar';
 
 
 
@@ -24,7 +22,7 @@ function App() {
         <Home />
       </Route>
       <Route exact path='/signin'>
-        <SigninPage />
+       
       </Route>
       </Switch>
     </BrowserRouter>
